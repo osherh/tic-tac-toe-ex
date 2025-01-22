@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe Game</title>
+  <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+  <script src="game.js"></script>
+</head>
+<body>
+  <div>
+    <div>
+      <button class="cell" id="cell-0-0" (click)="sendMoveToServer(0, 0)"></button>
+      <button class="cell" id="cell-0-1" (click)="sendMoveToServer(0, 1)"></button>
+      <button class="cell" id="cell-0-2" (click)="sendMoveToServer(0, 2)"></button>
+    </div>
+    <div>
+      <button class="cell" id="cell-1-0" (click)="sendMoveToServer(1, 0)"></button>
+      <button class="cell" id="cell-1-1" (click)="sendMoveToServer(1, 1)"></button>
+      <button class="cell" id="cell-1-2" (click)="sendMoveToServer(1, 2)"></button>
+    </div>
+    <div>
+      <button class="cell" id="cell-2-0" (click)="sendMoveToServer(2, 0)"></button>
+      <button class="cell" id="cell-2-1" (click)="sendMoveToServer(2, 1)"></button>
+      <button class="cell" id="cell-2-2" (click)="sendMoveToServer(2, 2)"></button>
+    </div>
+  </div>
+</body>
+</html>
